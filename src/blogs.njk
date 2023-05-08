@@ -1,0 +1,16 @@
+---
+title: Blogs
+layout: "base.njk"
+---
+<div class="section container">
+<h1 class="section-title">Recent articles</h1>
+    
+      <ul role="list" class="articles__list flow">
+  {%- for post in collections.featured | reverse -%}
+   {% include  'article-sinnpet.njk' %}
+{%- endfor-%}
+        
+        </ul>
+   
+ </div>
+  </div>
